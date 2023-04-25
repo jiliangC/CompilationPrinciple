@@ -1,0 +1,49 @@
+S->int main ( ) { A }
+A->B A
+A->ε
+B->C
+B->D
+B->O
+B->E
+B->F
+F->repeat do { A } until ( G ) ;
+B->H ;
+B->I
+B->{ A }
+I->int id J ;
+I->float id J ;
+I->chat id J ;
+I->int32 id J ;
+J->ε
+J->, id J
+J->= L K
+K->, id J
+K->ε
+M->*
+M->/
+M->+
+M->%
+M->-
+V->++
+V->--
+N-><
+N-><=
+N->>
+N->>=
+N->!=
+N->==
+C->if ( G )
+D->else B
+E->for ( I G ; H )
+O->while ( G ) { A }
+G->P N P
+P->L
+L->Q T
+T->M Q
+T->ε
+Q->id
+Q->num
+H->id U
+U->V
+U->= R
+R->L
